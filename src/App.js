@@ -1,14 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import {Title} from './components/Title'
+import {Header} from './components/Header'
 import {Options} from './components/Options';
-
+import React, { Fragment } from 'react';
+import { paises } from "./data";
 function App() {
   return (
-    <div >
-      <Title></Title>
-      <Options></Options>
-      </div>
+   
+        <div
+          style={{
+            background: 'white',
+            height: 470
+          }}
+        >
+          <Header/>
+          <Options  data={paises}/>
+          
+        </div>
+      
+
        );
 }
 
